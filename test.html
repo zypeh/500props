@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Font Test</title>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Rajdhani');
+            @font-face {
+                font-family: 'HKNova Medium';
+                src:    url('./Fonts/HKNova-Medium.woff2') format('woff2'),
+                        url('./Fonts/HKNova-Medium.woff') format('woff');
+            }
+            @font-face {
+                font-family: 'HKNova Narrow Medium';
+                src:    url('./Fonts/HKNova-MediumNarrow.woff2') format('woff2'),
+                        url('./Fonts/HKNova-MediumNarrow.woff') format('woff');
+            }
+            @font-face {
+                font-family: 'HKNova Rounded Medium';
+                src:    url('./Fonts/HKNova-MediumR.woff2') format('woff2'),
+                        url('./Fonts/HKNova-MediumR.woff') format('woff');
+            }
+            @font-face {
+                font-family: 'Fakt SemiBold';
+                src:    url('./Fonts/FaktPro-SemiBold.woff') format('woff');
+            }
+            @font-face {
+                font-family: 'Fakt Medium';
+                src:    url('./Fonts/FaktPro-Medium.woff') format('woff');
+            }
+            @font-face {
+                font-family: 'Fakt Normal';
+                src:    url('./Fonts/FaktPro-Normal.woff') format('woff');
+            }
+            @font-face {
+                font-family: 'Fakt Thin';
+                src:    url('./Fonts/FaktPro-Thin.woff') format('woff');
+            }
+			body {
+				background:#F3F3F3;
+				color: #252525;
+			}
+			a {
+				color: #0034CC;
+				text-decoration: none;
+			}
+            h1 {
+                font-family: 'HKNova Medium';
+                font-size: calc(156px + .0202 * (100vw - 1056px));
+                line-height: calc(164px + .01684 * (100vw - 1056px));
+                max-width: calc(3448px + .45791 * (100vw - 1056px));
+            }
+            b, strong {
+                font-family: 'Fakt Medium';
+            }
+            h2 {
+                font-family: 'Rajdhani';
+                font-weight: 400;
+                font-size: 300%;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                font-family: 'Rajdhani';
+                font-size: 250%;
+                margin-bottom: 0;
+            }
+            small {
+                font-family: 'Fakt Normal';
+                font-size: .75rem;
+                opacity: .75;
+            }
+            p {
+                font-family: 'Fakt Normal';
+                font-size: calc(16px + .00673 * (100vw - 1056px));
+                line-height: calc(22px + .00673 * (100vw - 1056px));
+            }
+		</style>
+	</head>
+	<body>
+        <div style="margin: auto; width: 75%; padding: 3rem 0 4rem 0">
+            <h1>Hello World.</h1>
+
+            <h2>OVERVIEW</h2>
+            <p>Thanks for your interest in <strong>IBM Plex</strong>, IBM’s new corporate type family. We welcome your feedback and contributions to this project. IBM Plex is open source, and should be used by IBMers for all typographical situations, replacing Helvetica Neue, whenever possible.</p>
+
+            <div style="width: 40rem; display: flex; flex-direction: column; align-items: flex-end;">
+                <h3>4945203</h3>
+                <small>1/21/2018, 3:46:58 PM</small>
+            </div>
+        </div>
+	</body>
+</html>
