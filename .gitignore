@@ -1,2 +1,5 @@
 .DS_Store
-/Fonts/*
+*/Fonts/*
+.cache
+dist
+node_modules
