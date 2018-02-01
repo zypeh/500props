@@ -50,7 +50,6 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
-    "preact": "^8.2.7",
-    "preact-portal": "^1.1.2"
+    "preact": "^8.2.7"
   }
 }
