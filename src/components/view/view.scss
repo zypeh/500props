@@ -1,0 +1,17 @@
+.view {
+    height: 100%;
+    // padding: 0 76px;
+    overflow-y: hidden;
+    transition: transform 0.3s ease-in-out;
+    transition-delay: .003s;
+
+    &--squeezed {
+        transform: translateX(300px);
+    }
+}
+
+@media all and (max-width: 480px) {
+    .view--squeezed {
+        transform: translateX(316px);
+    }
+}

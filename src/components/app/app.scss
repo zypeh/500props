@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Fakt Normal';
+    src:    url('../../../assets/Fonts/FaktPro-Normal.woff') format('woff');
+}
+
+html, body {
+    font-family: Fakt Normal, sans-serif;
+    background: #F3F3F3;
+    color: #1c1f1c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    overflow-x: hidden;
+}

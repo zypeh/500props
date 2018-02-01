@@ -1,0 +1,127 @@
+
+.listing-card {
+    display: inline-flex;
+    flex-flow: column;
+    margin: 8px;
+    cursor: pointer;
+
+    img {
+        width: 252px;
+        height: 168px;
+        border-radius: 3px;
+    }
+    h3 {
+        overflow-wrap: break-word;
+    }
+    &-description {
+        width: 252px;
+    }
+}
+
+.listing-modal-background {
+    position: fixed;
+    left: 0;
+    top: 76px;
+    right: 0;
+    bottom: 0;
+    background: #f3f3f3;
+    overflow: auto;
+    animation: pop .23s forwards ease 1;
+}
+@keyframes pop {
+    from { opacity:0; }
+}
+
+.listing-modal {
+    position: absolute;
+    right: 36px;
+    top: 0;
+    bottom: 25px;
+    left: 36px;
+    overflow: scroll;
+    background: #f3f3f3;
+    border: 2px solid #1c1c1c;
+    box-shadow: 12px 12px rgba(70,178,157, 1);
+    animation: zoom .4s forwards ease 1;
+}
+@keyframes zoom {
+    from { opacity:0; transform:translateY(100%) scale(0); }
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    right: 80px;
+    top: 32px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    z-index: 1;
+
+    &:hover {
+        opacity: 1;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+    &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 26.29px;
+        width: 2px;
+        background-color: #1c1c1c;
+    }
+}
+
+@media all and (max-width: 688px) {
+    .listing-card {
+        flex-flow: row;
+        &-description {
+            margin-left: 16px;
+        }
+    }
+}
+
+@media all and (max-width: 660px) {
+    .listing-card {
+        flex-flow: column;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        &-description {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 736px) {
+    .listing-modal {
+        position: absolute;
+        left: 38px;
+        top: 2px;
+        right: 38px;
+        bottom: 0;
+        overflow: scroll;
+        background: #f3f3f3;
+        border: none;
+        box-shadow: none;
+        animation: zoom .4s forwards ease 1;
+    }
+    .close {
+        right: 0;
+        left: 20px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+    }
+}
+.noscroll {
+    position: fixed;
+    overflow: hidden;
+}

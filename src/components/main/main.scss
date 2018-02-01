@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'HKNova Rounded Medium';
+    src:    url('../../../assets/Fonts/HKNova-MediumR.woff2') format('woff2'),
+            url('../../../assets/Fonts/HKNova-MediumR.woff') format('woff');
+}
+@font-face {
+    font-family: 'Fakt SemiBold';
+    src:    url('../../../assets/Fonts/FaktPro-SemiBold.woff') format('woff');
+}
+
+h1 {
+    font: 300 31px/40px 'HKNova Rounded Medium';
+}
+h2 {
+    font: 300 26px/34px 'HKNova Rounded Medium';
+}
+h3, h4 {
+    font: 300 21px/30px 'HKNova Rounded Medium';
+}
+h4 {
+    font-family: 'Rajdhani';
+}
+p {
+    font: 300 17px/26px 'Fakt Normal';
+    b, strong {
+        font: 300 17px/26px 'Fakt SemiBold';
+    }
+}
+h5 {
+    font: 300 14px/23px 'Fakt Normal';
+}
+h6 {
+    font: 300 12px/20px 'Fakt Normal';
+}
+
+a {
+    color: #46b29d;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 0 76px;
+}
+
+@media all and (max-width: 480px) {
+    main {
+        padding: 0 60px;
+    }
+}

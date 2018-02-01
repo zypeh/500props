@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+@font-face {
+    font-family: 'HKNova Medium';
+    src:    url('../assets/Fonts/HKNova-Medium.woff2') format('woff2'),
+            url('../assets/Fonts/HKNova-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'HKNova Narrow Medium';
+  src:    url('../assets/Fonts/HKNova-MediumNarrow.woff2') format('woff2'),
+          url('../assets/Fonts/HKNova-MediumNarrow.woff') format('woff');
+}
+@font-face {
+  font-family: 'HKNova Rounded Medium';
+  src:    url('../assets/Fonts/HKNova-MediumR.woff2') format('woff2'),
+          url('../assets/Fonts/HKNova-MediumR.woff') format('woff');
+}
+/*
+@font-face {
+    font-family: 'HKNova Narrow Medium';
+    src:    url('../assets/Fonts/HKNova-MediumNarrow.woff2') format('woff2'),
+            url('../assets/Fonts/HKNova-MediumNarrow.woff') format('woff');
+}
+@font-face {
+    font-family: 'HKNova Rounded Medium';
+    src:    url('../assets/Fonts/HKNova-MediumR.woff2') format('woff2'),
+            url('../assets/Fonts/HKNova-MediumR.woff') format('woff');
+}
+@font-face {
+    font-family: 'Fakt SemiBold';
+    src:    url('../assets/Fonts/FaktPro-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Fakt Medium';
+    src:    url('../assets/Fonts/FaktPro-Medium.woff') format('woff');
+}
+*/
+@font-face {
+    font-family: 'Fakt Normal';
+    src:    url('../assets/Fonts/FaktPro-Normal.woff') format('woff');
+}
+/*
+@font-face {
+    font-family: 'Fakt Thin';
+    src:    url('../assets/Fonts/FaktPro-Thin.woff') format('woff');
+}
+*/
+:root {
+    --big-title: HKNova Narrow Medium;
+    --title: Rajdhani;
+    --font: Fakt Normal;
+    --primary-color: #fa0;
+    --light: #eee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: .5em 0;
+}
+
+@media(min-width:35em) {
+  .col {
+    display: table-cell;
+  }
+  .\31 {
+    width: 5%;
+  }
+  .\33 {
+    width: 22%;
+  }
+  .\34 {
+    width: 30%;
+  }
+  .\35 {
+    width: 40%;
+  }
+  .\32 {
+    width: 15%;
+  }
+  .row {
+    display: table;
+    border-spacing: 1em 0;
+  }
+}
+
+.w-100,
+.row {
+  width: 100%;
+}
+
+.card:focus,
+hr {
+  outline: 0;
+  border: solid var(--primary-color);
+}
+
+.card,
+pre {
+  padding: 1em;
+  border: solid var(--light);
+}
+
+a:hover,
+.btn:hover {
+  opacity: .6;
+}
+
+.c {
+  max-width: 60em;
+  padding: 1em;
+  margin: auto;
+  font: 1em/1.6 var(--font);
+}
+
+h6 {
+  font: 300 14px/23px var(--font);
+}
+
+h5 {
+  font: 300 26px/34px var(--font);
+}
+
+h4 {
+  font: 300 31px/40px var(--font);
+}
+
+h3 {
+  font: 300 38px/47px var(--title);
+}
+
+h2 {
+  font: 300 46px/55px var(--font);
+}
+
+h1 {
+  font: 300 57px/65px var(--big-title);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.btn.primary {
+  color: white;
+  background: var(--primary-color);
+  border: solid var(--primary-color);
+}
+
+pre {
+  overflow: auto;
+}
+
+td,
+th {
+  padding: 1em;
+  text-align: left;
+  border-bottom: solid var(--light);
+}
+
+.btn {
+  padding: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: white;
+  border: solid;
+  font: .7em var(--font);
+}
+/*
+			body {
+				background:#F3F3F3;
+				color: #252525;
+			}
+			a {
+				color: #0034CC;
+				text-decoration: none;
+			}
+            h1 {
+                font-family: 'HKNova Medium';
+                font-size: calc(156px + .0202 * (100vw - 1056px));
+                line-height: calc(164px + .01684 * (100vw - 1056px));
+                max-width: calc(3448px + .45791 * (100vw - 1056px));
+            }
+            b, strong {
+                font-family: 'Fakt Medium';
+            }
+            h2 {
+                font-family: 'Rajdhani';
+                font-weight: 400;
+                font-size: 300%;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                font-family: 'Rajdhani';
+                font-size: 250%;
+                margin-bottom: 0;
+            }
+            small {
+                font-family: 'Fakt Normal';
+                font-size: .75rem;
+                opacity: .75;
+            }
+            p {
+                font-family: 'Fakt Normal';
+                font-size: calc(16px + .00673 * (100vw - 1056px));
+                line-height: calc(22px + .00673 * (100vw - 1056px));
+            }
+            */

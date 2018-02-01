@@ -5,6 +5,7 @@
         "noImplicitAny": true,
         "module": "commonjs",
         "target": "esnext",
+        "jsxFactory": "h",
         "jsx": "react",
         "lib": ["dom", "es2015", "es2017"],
         "types": ["node"]

@@ -33,8 +33,6 @@
     "@types/enzyme": "^3.1.7",
     "@types/jest": "^22.0.1",
     "@types/node": "^9.3.0",
-    "@types/react": "^16.0.34",
-    "@types/react-dom": "^16.0.3",
     "autoprefix": "^1.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -42,7 +40,6 @@
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.4.1",
     "parcel-plugin-typescript": "^0.5.2",
-    "postcss-modules": "^1.1.0",
     "prettier": "^1.10.2",
     "react-test-renderer": "^16.2.0",
     "ts-jest": "^22.0.1",
@@ -53,7 +50,7 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "preact": "^8.2.7",
+    "preact-portal": "^1.1.2"
   }
 }
