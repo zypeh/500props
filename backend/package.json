@@ -1,0 +1,24 @@
+{
+  "name": "500props",
+  "version": "0.2.0",
+  "description": "backend for 500props",
+  "main": "index.js",
+  "author": "zypeh <zypeh.geek@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "engines": {
+    "node": ">=9.5.0"
+  },
+  "scripts": {
+    "dev": "micro-dev",
+    "start": "micro"
+  },
+  "dependencies": {
+    "fastify": "0.40.0",
+    "fastify-graphql": "https://github.com/sirsavary/fastify-graphql.git",
+    "graphql": "^0.13.0",
+    "graphql-tools": "^2.20.2",
+    "typescript": "^2.7.1"
+  },
+  "devDependencies": {}
+}
