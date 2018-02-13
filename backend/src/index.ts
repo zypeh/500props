@@ -1,8 +1,10 @@
-'use strict'
+import * as fastify from 'fastify';
+import * as cors from 'cors';
+import * as http from 'http';
+import { makeExecutableSchema } from 'graphql-tools';
+import { graphqlFastify, graphiqlFastify } from 'fastify-graphql';
 
-const fastify = require('fastify')()
-const { makeExecutableSchema } = require('graphql-tools')
-const { graphqlFastify, graphiqlFastify } = require('fastify-graphql')
+const app = fastify();
 
 const typeDefs = `
 type Query {
@@ -20,7 +22,7 @@ const resolvers = {
 
 const schema = makeExecutableSchema({ typeDefs, resolvers })
 
-fastify
+app
   .register(graphqlFastify, {
       prefix: '/gql',
       graphql: {
@@ -34,9 +36,11 @@ fastify
       }
   })
 
-fastify.listen(8000, function (err) {
+const PORT = parseInt(process.env.PORT, 10) || 3000;
+
+app.listen(PORT, function (err) {
   if (err) {
     throw err
   }
-  console.log(`listening on ${fastify.server.address().port}`)
+  console.log(`Listening on ${PORT}`)
 })

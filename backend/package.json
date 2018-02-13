@@ -1,6 +1,6 @@
 {
   "name": "500props",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "backend for 500props",
   "main": "index.js",
   "author": "zypeh <zypeh.geek@gmail.com>",
@@ -10,15 +10,27 @@
     "node": ">=9.5.0"
   },
   "scripts": {
-    "dev": "micro-dev",
-    "start": "micro"
+    "build": "tsc",
+    "prestart": "yarn build",
+    "start": "node ./dist",
+    "dev": "nodemon"
   },
   "dependencies": {
+    "cors": "^2.8.4",
     "fastify": "0.40.0",
     "fastify-graphql": "https://github.com/sirsavary/fastify-graphql.git",
-    "graphql": "^0.13.0",
+    "graphql": "0.12",
     "graphql-tools": "^2.20.2",
     "typescript": "^2.7.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/cors": "^2.8.3",
+    "@types/graphql": "^0.12.3",
+    "@types/node": "^9.4.5",
+    "nodemon": "^1.14.12",
+    "prettier": "^1.10.2",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.6.0",
+    "tslint-config-prettier": "^1.7.0"
+  }
 }
