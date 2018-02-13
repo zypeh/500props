@@ -1,28 +1,15 @@
 import * as fastify from 'fastify';
-import * as cors from 'cors';
 import * as http from 'http';
 import { makeExecutableSchema } from 'graphql-tools';
 import { graphqlFastify, graphiqlFastify } from 'fastify-graphql';
+import * as helmet from 'fastify-helmet';
+
+import schema from './graphql';
 
 const app = fastify();
 
-const typeDefs = `
-type Query {
-    hello: String,
-    hellos: [String]
-}
-`
-
-const resolvers = {
-  Query: {
-    hello: () => 'world',
-    hellos: () => ['hola', 'hello', 'aloha']
-  }
-}
-
-const schema = makeExecutableSchema({ typeDefs, resolvers })
-
 app
+  .register(helmet)
   .register(graphqlFastify, {
       prefix: '/gql',
       graphql: {

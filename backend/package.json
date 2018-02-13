@@ -16,15 +16,14 @@
     "dev": "nodemon"
   },
   "dependencies": {
-    "cors": "^2.8.4",
     "fastify": "0.40.0",
     "fastify-graphql": "https://github.com/sirsavary/fastify-graphql.git",
+    "fastify-helmet": "^1.0.3",
     "graphql": "0.12",
     "graphql-tools": "^2.20.2",
     "typescript": "^2.7.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.3",
     "@types/graphql": "^0.12.3",
     "@types/node": "^9.4.5",
     "nodemon": "^1.14.12",
