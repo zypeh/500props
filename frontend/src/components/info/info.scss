@@ -1,0 +1,23 @@
+.info-modal {
+    position: fixed;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: none;
+}
+
+.info-modal-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 2rem;
+    font-size: 52px;
+    cursor: pointer;
+    display: none;
+    z-index: 5;
+}
+
+.raised {
+    display: block;
+}

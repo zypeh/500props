@@ -2,6 +2,8 @@ import {h, Component} from 'preact';
 import Menu from '../menu';
 import View from '../view';
 import Main from '../main';
+import Topbar from '../topbar';
+
 import './app.scss';
 
 export default class App extends Component<{}, any> {
@@ -25,6 +27,7 @@ export default class App extends Component<{}, any> {
                     squeezed={this.state.isMenuOpened}
                     options={this.state.options}
                 >
+                    <Topbar />
                     <Main />
                 </View>
             </div>
